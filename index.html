@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive login form with social media login buttons</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form>
+        <h1>Regisztráció</h1>
+        <label for="email">Email:</label>
+        <input class="input" type="email" placeholder="" name="username" required />
+        <label for="email">Telefonszám:</label>
+        <input class="input" type="email" placeholder="" name="username" required />
+        <label for="password">Jelszó:</label>
+        <div class="container">
+            <input class="input" type="password" name="password" id="password" required />
+            <i class="fa fa-eye" id="togglePassword"></i>
+        </div>
+        <label for="password">Jelszó ismét:</label>
+        <div class="container">
+            <input class="input" type="password" name="checkPassword" id="checkPassword" required />
+            <i class="fa fa-eye" id="checkTogglePassword"></i>
+        </div>
+
+        <div>
+            <input type="checkbox" /><span>Elfogadom az Adatkezelési Tájékoztató -t és az ÁFF -et</span>
+        </div>
+        <div class="checkbox-div">
+            <input type="checkbox" /><span>Hozzájárulok a marketingcélú megkeresésekhez az Adatkezelési Tájékoztató -ban foglaltak szerint</span>
+        </div>
+           
+        <button type="submit" class="login-btn">Regisztráció</button>
+        <p class="registration">Bejelentkezés</p>
+
+        <div class="seperator"><b>vagy</b></div>
+        <div class="Social">
+            <button type="submit" class="facebook-btn">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </button>
+            <button type="submit" class="twitter-btn">
+                <i class="fa fa-linkedin"></i>
+            </button>
+        </div>
+        
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
